@@ -3,10 +3,11 @@
 
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const navConfig = require('./config/navConfig')
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
+  title: 'Kenanyah Site',
   tagline: 'Dinosaurs are cool',
   favicon: 'img/favicon.ico',
 
@@ -31,6 +32,11 @@ const config = {
     defaultLocale: 'en',
     locales: ['en'],
   },
+
+  // This is the main configuration object.
+  // It's where you define your site metadata, navigation, footer, etc.
+  // See https://v2.docusaurus.io/docs/docusaurus.config.js for more info.
+
 
   presets: [
     [
@@ -63,27 +69,7 @@ const config = {
     ({
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
-      navbar: {
-        title: 'My Site',
-        logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
-        },
-        items: [
-          {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
-            position: 'left',
-            label: 'Tutorial',
-          },
-          {to: '/blog', label: 'Blog', position: 'left'},
-          {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
-            position: 'right',
-          },
-        ],
-      },
+      navbar: navConfig,
       footer: {
         style: 'dark',
         links: [
@@ -149,9 +135,6 @@ const config = {
       }),
     ],
   ],
-  // plugins: [
-  //   require.resolve("@cmfcmf/docusaurus-search-local")
-  // ],
 };
 
 module.exports = config;
