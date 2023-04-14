@@ -11,6 +11,16 @@ module.exports = {
       position: 'right',
       label: 'Tutorial',
     },
-    {to: '/blog', label: 'Blog', position: 'right'},
+    {
+      to: '/study',
+      label: '学习',
+      position: 'right',
+      items: [
+        {
+          to: '/blog',
+          label: 'Blog',
+        },
+      ]
+    },
   ],
-}
+};
