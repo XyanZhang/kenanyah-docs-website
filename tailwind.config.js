@@ -9,6 +9,11 @@ module.exports = {
     backgroundImage: {
       'banner': "url(/img/banner.jpg)",
     },
+    extend: {
+      svg: {
+        display: 'inline-block',
+      }
+    }
     // svg: {
     //   display: 'inline-block',
     // }

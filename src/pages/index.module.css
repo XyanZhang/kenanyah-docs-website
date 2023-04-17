@@ -4,15 +4,17 @@
  */
 
 .heroBanner {
-  padding: 4rem 0;
+  /* padding: 4rem 0; */
   text-align: center;
   position: relative;
   overflow: hidden;
+  display: flex;
+  align-items: center;
 }
 
 @media screen and (max-width: 996px) {
   .heroBanner {
-    padding: 2rem;
+    /* padding: 2rem; */
   }
 }
 
@@ -20,4 +22,20 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.scaleHeight {
+  height: 0;
+  /* 延迟两秒 从height 0 到 500px */
+  animation: scaleHeight 2s cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
+  animation-fill-mode: forwards;
+}
+
+@keyframes scaleHeight {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 500px;
+  }
 }

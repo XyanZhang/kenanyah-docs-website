@@ -10,11 +10,11 @@ import styles from './index.module.css';
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
-    <header className={clsx('hero hero--primary', styles.heroBanner, ' bg-banner')}>
+    <header className={clsx(styles.heroBanner,  styles.scaleHeight, ' bg-banner')}>
       <div className="container">
         <h1 className="hero__title text-red-400">{siteConfig.title}</h1>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
+        <div className={clsx(styles.buttons, 'mt-9')}>
           <Link
             className="button button--secondary button--lg"
             to="/docs/intro">
