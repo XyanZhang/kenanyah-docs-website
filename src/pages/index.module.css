@@ -27,7 +27,7 @@
 .scaleHeight {
   height: 0;
   /* 延迟两秒 从height 0 到 500px */
-  animation: scaleHeight 2s cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
+  animation: scaleHeight 1.6s cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
   animation-fill-mode: forwards;
 }
 
@@ -36,6 +36,6 @@
     height: 0;
   }
   100% {
-    height: 500px;
+    height: 590px;
   }
 }
