@@ -39,7 +39,8 @@ module.exports = {
     //   label: 'Tutorial',
     // },
     {
-      type: 'docSidebar',
+      // type: 'docSidebar',
+      to: '/nav',
       position: 'right',
       label: '导航',
     },

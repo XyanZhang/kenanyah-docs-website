@@ -3,12 +3,13 @@
 
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+
 const navConfig = require('./config/navConfig')
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Kenanyah Site',
-  tagline: 'Dinosaurs are cool',
+  tagline: "kenayah's life, thought, blog, writing, utils",
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -30,7 +31,7 @@ const config = {
   // to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'zh-Hans'],
+    locales: ['en'],
   },
 
   // This is the main configuration object.
@@ -134,6 +135,9 @@ const config = {
         // ```
       }),
     ],
+  ],
+  plugins: [
+    "./plugins/postcss-tailwind-loader"
   ],
 };
 
