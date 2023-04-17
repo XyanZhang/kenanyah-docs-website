@@ -36,6 +36,9 @@
   @tailwind screens;
 }
 
+body {
+  overflow: scroll!important;
+}
 /* 优化body 上的滚动条样式 */
 body:--webkit-scrollbar-track {
   background: #f1f1f1;
@@ -45,12 +48,15 @@ body::-webkit-scrollbar {
   height: 6px;
 }
 body::-webkit-scrollbar-thumb {
-  background: #888;
+  background: rgba(0, 0, 0, 0.2);
   border-radius: 10px;
 }
 body::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
 
-
+img, svg, video, canvas, audio, iframe, embed, object {
+  display: inline-block!important;
+  vertical-align: middle;
+}
 
