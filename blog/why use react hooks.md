@@ -68,3 +68,28 @@ class MyComp {
 
 export default withWindowSize(MyComp)
 ```
+
+## useCallback
+
+> 在 React 函数组件中，每一次UI变化，都是通过重新执行整个函数来完成的，函数组件中并没有一个直接的方式在多次渲染之间维持一个状态
+> 每次创建新函数的方式会让接收事件处理函数的组件，需要重新渲染
+
+## useMemo
+
+如果某个数据是通过其他数据计算得到的，那么只有当用到的数据，也就是以来的数据发生变化的时候，才需要重新计算
+
+```js
+// 使用 useMemo 实现 useCallbacks
+const myEventHandler = useMemo(() => {
+  return cacheValue;
+}, [dep1, dep2])
+```
+
+```js
+// 使用 useMemo 实现 useCallbacks
+const myEventHandler = useMemo(() => {
+  return () => {
+    // 事件处理
+  }
+}, [dep1, dep2])
+```
