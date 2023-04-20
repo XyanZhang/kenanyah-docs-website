@@ -40,6 +40,12 @@ module.exports = {
     // },
     {
       // type: 'docSidebar',
+      to: '/blog',
+      position: 'right',
+      label: '博客',
+    },
+    {
+      // type: 'docSidebar',
       to: '/nav',
       position: 'right',
       label: '导航',
