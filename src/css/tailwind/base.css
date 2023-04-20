@@ -34,3 +34,7 @@ h1 {
     @apply tw-text-xs;
   }
 }
+
+img, svg, video, canvas, audio, iframe, embed, object {
+  @apply tw-inline-block;
+}
