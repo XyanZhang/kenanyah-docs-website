@@ -10,15 +10,15 @@ import styles from './index.module.css';
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
-    <header className={clsx(styles.heroBanner,  styles.scaleHeight, ' bg-banner')}>
+    <header className={clsx(styles.heroBanner,  styles.scaleHeight, 'bg-center bg-banner')}>
       <div className="container">
-        <h1 className="hero__title text-red-400">{siteConfig.title}</h1>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
+        <h1 className={clsx(styles.title, "hero__title text-red-400")}>{siteConfig.title}</h1>
+        <p className={clsx('hero__subtitle shadow-sm', styles.textShadowLight)}>{siteConfig.tagline}</p>
         <div className={clsx(styles.buttons, 'mt-9')}>
           <Link
             className="button button--secondary button--lg"
             to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
+              See the Nav Page
           </Link>
         </div>
       </div>

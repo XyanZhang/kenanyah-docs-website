@@ -25,11 +25,24 @@
 }
 
 .scaleHeight {
-  height: 0;
+  height: 590px;
   /* 延迟两秒 从height 0 到 500px */
-  animation: scaleHeight 1.6s cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
-  animation-fill-mode: forwards;
+  /* animation: scaleHeight 1.6s cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards; */
 }
+
+.textShadowLight {
+  color:#1f282f;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.title {
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  /* box-shadow: 0 0 5px 0#fff; */
+}
+
+/* 写一个遮罩，从中间向上下面展开 */
+/* 墨水画效果显示 */
+/* 水波纹效果 */
 
 @keyframes scaleHeight {
   0% {
