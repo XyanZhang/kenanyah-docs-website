@@ -1,146 +1,34 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
-const path = require('path');
 
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
-
-const navConfig = require('./config/navConfig')
+const presets = require('./config/presets');
+const themeConfig = require('./config/themeConfig');
+const themes = require('./config/themes');
+const plugins = require('./config/plugins');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Kenanyah Site',
-  tagline: "kenayah's life, thought, blog, writing, utils",
+  tagline: "kenayah's life, thought, blog, writing, tookit",
   favicon: 'img/favicon.ico',
-
-  // Set the production url of your site here
   url: 'https://your-docusaurus-test-site.com',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
-
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
-
+  projectName: 'kenanyah-docs-website', // Usually your repo name.
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-
-  // Even if you don't use internalization, you can use this field to set useful
-  // metadata like html lang. For example, if your site is Chinese, you may want
-  // to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
-    locales: ['en'],
+    locales: ['en'], // zh-Hans
   },
-
-  // This is the main configuration object.
-  // It's where you define your site metadata, navigation, footer, etc.
-  // See https://v2.docusaurus.io/docs/docusaurus.config.js for more info.
-
-
-  presets: [
-    [
-      'classic',
-      /** @type {import('@docusaurus/preset-classic').Options} */
-      ({
-        docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        },
-        theme: {
-          customCss: path.resolve(__dirname, './src/css/index.css'),
-        // customCss: require.resolve('./src/css/index.css'),
-        },
-      }),
-    ],
-  ],
-
-  themeConfig:
-    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
-    ({
-      // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
-      navbar: navConfig,
-      footer: {
-        style: 'dark',
-        links: [
-          {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Tutorial',
-                to: '/docs/intro',
-              },
-            ],
-          },
-          {
-            title: 'Community',
-            items: [
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
-              },
-            ],
-          },
-        ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
-      },
-      prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
-      },
-    }),
-  themes: [
-    // ... Your other themes.
-    [
-      require.resolve("@easyops-cn/docusaurus-search-local"),
-      ({
-        // ... Your options.
-        // `hashed` is recommended as long-term-cache of index file is possible.
-        hashed: true,
-        // For Docs using Chinese, The `language` is recommended to set to:
-        // ```
-        // language: ["en", "zh"],
-        // ```
-      }),
-    ],
-  ],
-  plugins: [
-    "./plugins/postcss-tailwind-loader"
-  ],
+  presets: presets,
+  themeConfig: themeConfig,
+  themes: themes,
+  plugins: plugins
 };
 
 module.exports = config;
