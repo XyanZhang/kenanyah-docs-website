@@ -3,14 +3,12 @@ import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
-import HomepageFeatures from '@site/src/components/HomepageFeatures';
-// import "tailwindcss/tailwind.css"
 import styles from './index.module.css';
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
-    <header className={clsx(styles.heroBanner,  styles.scaleHeight, 'tw-bg-center tw-bg-banner')}>
+    <header className={clsx(styles.heroBanner,  styles.scaleHeight, 'tw-bg-center bg-banner')}>
       <div className="container">
         <h1 className={clsx(styles.title, "hero__title tw-text-red-400")}>{siteConfig.title}</h1>
         <p className={clsx('hero__subtitle tw-shadow-sm', styles.textShadowLight)}>{siteConfig.tagline}</p>

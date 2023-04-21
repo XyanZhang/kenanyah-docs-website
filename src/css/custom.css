@@ -20,3 +20,12 @@
 .color-link {
   color: var(--ifm-link-color);
 }
+  
+.bg-banner {
+  background-image: url(/img/mingrixiang.jpg);
+}
+[data-theme='dark'] {
+  .bg-banner {
+    background-image: url(/img/banner.jpg);
+  }
+}
