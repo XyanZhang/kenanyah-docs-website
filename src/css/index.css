@@ -5,4 +5,5 @@
 @import 'tailwindcss/utilities';
 @import './tailwind/utilities';
 
-@import './custom.css'
+@import './vars.css';
+@import './custom.css';

@@ -1,54 +1,22 @@
-/**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
- */
-
-/* You can override the default Infima variables here. */
-:root {
-  --ifm-color-primary: #852e2e;
-  --ifm-color-primary-dark: #782929;
-  --ifm-color-primary-darker: #712727;
-  --ifm-color-primary-darkest: #5d2020;
-  --ifm-color-primary-light: #923333;
-  --ifm-color-primary-lighter: #993535;
-  --ifm-color-primary-lightest: #ad3c3c;
-  --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+::-webkit-scrollbar {
+  width: 4px !important;
+  height: 4px !important;
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme='dark'] {
-  --ifm-color-primary: #c22525;
-  --ifm-color-primary-dark: #af2121;
-  --ifm-color-primary-darker: #a51f1f;
-  --ifm-color-primary-darkest: #881a1a;
-  --ifm-color-primary-light: #d52929;
-  --ifm-color-primary-lighter: #d83232;
-  --ifm-color-primary-lightest: #dd4f4f;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+::-webkit-scrollbar-thumb {
+  background-color: rgb(187 172 172 / 93.2%);
+  border-radius: 2px;
 }
 
-/* body {
-  overflow: scroll!important;
-}
-body:--webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-body::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
-}
-body::-webkit-scrollbar-thumb {
-  background: rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
-}
-body::-webkit-scrollbar-thumb:hover {
-  background: #555;
+::-webkit-scrollbar-track-piece {
+  background: #fff;
 }
 
-img, svg, video, canvas, audio, iframe, embed, object {
-  display: inline-block!important;
-  vertical-align: middle;
-} */
+::-webkit-scrollbar-thumb:horizontal:hover,
+::-webkit-scrollbar-thumb:vertical:hover {
+  background-color: rgb(230 80 80 / 80%);
+}
 
+.color-link {
+  color: var(--ifm-link-color);
+}

@@ -53,7 +53,7 @@ module.exports = {
       },
       {
         // type: 'docSidebar',
-        to: '/nav',
+        to: '/navPage',
         position: 'right',
         label: '导航',
       },
