@@ -2,6 +2,7 @@ module.exports = [
   // ... Your other themes.
   [
     require.resolve("@easyops-cn/docusaurus-search-local"),
+    
     ({
       // ... Your options.
       // `hashed` is recommended as long-term-cache of index file is possible.
@@ -12,4 +13,5 @@ module.exports = [
       // ```
     }),
   ],
+  '@docusaurus/theme-live-codeblock',
 ];
