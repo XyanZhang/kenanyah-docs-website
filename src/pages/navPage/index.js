@@ -3,13 +3,19 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import NavItemCard from '../../components/NavItemCard';
 import navList from '../../data/navList';
+import styles from './index.module.css';
+import clsx from 'clsx';
 function NavPage() {
   return (
     <div className="container">
-      <div className='tw-mt-9'>
+      <div className={clsx('tw-mt-9', styles.linkGrid)}>
         {
-          navList.map((item, index) => {
-            return <NavItemCard key={index} navItem={item}></NavItemCard>
+          // 复制数组第一项10次
+          Array(10).fill(navList[0]).map((item, index) => {
+          // navList.map((item, index) => {
+            return (<>
+              <NavItemCard key={index} navItem={item}></NavItemCard>
+            </>)
           })
         }
       </div>
