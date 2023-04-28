@@ -7,10 +7,6 @@ module.exports = {
   ],
   prefix: 'tw-',
   theme: {
-    // ...
-    // backgroundImage: {
-    //   'banner': "url(/img/banner.jpg)",
-    // },
     extend: {
       svg: {
         display: 'inline-block',
