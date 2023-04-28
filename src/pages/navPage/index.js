@@ -11,8 +11,7 @@ function NavPage() {
       <div className={clsx('tw-mt-9', styles.linkGrid)}>
         {
           // 复制数组第一项10次
-          Array(10).fill(navList[0]).map((item, index) => {
-          // navList.map((item, index) => {
+          navList.map((item, index) => {
             return (<>
               <NavItemCard key={index} navItem={item}></NavItemCard>
             </>)
