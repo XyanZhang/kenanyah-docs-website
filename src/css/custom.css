@@ -24,6 +24,13 @@
 .bg-banner {
   background-image: url(/img/mingrixiang.jpg);
 }
+.card-hover{
+  transition: transform .2s ease-in-out;
+}
+.card-hover:hover {
+  box-shadow: 0 10px 20px -10px rgba(0,0,0,.2);
+  transform: translateY(-5px);
+}
 [data-theme='dark'] {
   .bg-banner {
     background-image: url(/img/banner.jpg);
