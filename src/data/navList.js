@@ -14,4 +14,12 @@ export default [
     icon: 'https://github.githubassets.com/favicons/favicon.svg',
     description: 'GitHub is where people build software. More than 100 million people use GitHub to discover, fork, and contribute to over 330 million projects.',
   },
-];
+  {
+    sort: 2,
+    title: 'mysql修改root密码',
+    url: 'https://blog.csdn.net/wangzhepaohui/article/details/109685612',
+    icon: 'https://github.githubassets.com/favicons/favicon.svg',
+    description: 'https://blog.csdn.net/wangzhepaohui/article/details/109685612',
+    category: 'mysql'
+  },
+]
