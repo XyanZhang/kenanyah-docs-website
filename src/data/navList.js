@@ -22,4 +22,20 @@ export default [
     description: 'https://blog.csdn.net/wangzhepaohui/article/details/109685612',
     category: 'mysql'
   },
+  {
+    sort: 3,
+    title: 'react',
+    url: 'https://react.dev/',
+    icon: 'https://react.dev/favicon.ico',
+    description: 'The library for web and native user interfaces',
+    category: 'react'
+  },
+  {
+    sort: 3,
+    title: 'react-codesanbox',
+    url: 'https://codesandbox.io/s/new?file=/src/App.js',
+    icon: 'https://react.dev/favicon.ico',
+    description: 'react-codesanbox',
+    category: 'react'
+  },
 ]
